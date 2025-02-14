@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>surprise?</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="slideshow.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  </head>
+
+  <body>
+    <!-- Title Page Section -->
+    <section id="title-page">
+      <header>
+        <h1>happy valentine's day!</h1>
+        <p>
+          Hi! Happy valentine's day my bb!!! Below you will find some
+          (hopefully) funny valentine's cards I thought of, as well as a flower
+          I tried to "draw" using some math. I'm not the best in math so the
+          flower may also not be the nicest looking. Do let me know if you liked
+          this a bit at least. Love you!
+        </p>
+      </header>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section id="slideshow-section">
+      <header>
+        <h1>some valentine's cards</h1>
+      </header>
+      <div class="slideshow-container">
+        <button id="prev" class="navigation-btn">&#10094;</button>
+        <img
+          id="slide"
+          src="images/image1.jpg"
+          alt="Slideshow Image"
+          class="slide"
+        />
+        <button id="next" class="navigation-btn">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- p5.js Creation Section -->
+    <section id="p5js-section">
+      <header>
+        <h1>my attempt to "draw" your favorite flower</h1>
+      </header>
+      <div id="sketch-holder"></div>
+    </section>
+
+    <!-- Smooth Scroll Button (Optional) -->
+    <nav id="scroll-nav">
+      <ul>
+        <li><a href="#title-page">Title</a></li>
+        <li><a href="#slideshow-section">Slideshow</a></li>
+        <li><a href="#p5js-section">p5.js Creation</a></li>
+      </ul>
+    </nav>
+  </body>
+  <script src="sketch.js"></script>
+</html>

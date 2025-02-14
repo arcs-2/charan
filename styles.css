@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    background-color: #FF6F61;
+    color: white;
+    /* font-family: Arial, sans-serif; */
+    font-family: Bell MT;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Adds smooth scrolling */
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh; /* Each section takes at least the full height of the viewport */
+}
+
+header h1 {
+    font-size: 6em;
+}
+
+header p {
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Styling the slideshow section */
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.sketch-holder {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.slide {
+    width: 100%;
+    display: block;
+}
+
+.navigation-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+/* Styling the p5.js section */
+/* #sketch-holder {
+    max-width: 800px;
+    margin: 0 auto;
+} */
+
+/* Scroll navigation links */
+#scroll-nav {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#scroll-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#scroll-nav ul li {
+    margin: 0 10px;
+}
+
+#scroll-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
